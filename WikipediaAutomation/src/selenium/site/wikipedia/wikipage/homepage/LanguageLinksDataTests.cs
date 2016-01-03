@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using selenium.site.shared;
+using selenium.shared;
 
 namespace selenium.site.wikipedia.wikipage.homepage.Tests
 {

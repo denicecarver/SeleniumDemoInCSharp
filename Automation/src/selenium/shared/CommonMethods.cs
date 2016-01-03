@@ -7,7 +7,7 @@ using system.data.sqlitehelper;
 using System.Diagnostics;
 using System.Data.SQLite;
 
-namespace selenium.site.shared
+namespace selenium.shared
 {
     public static class CommonMethods
     {

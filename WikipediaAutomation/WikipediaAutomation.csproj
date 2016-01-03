@@ -48,7 +48,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="src\selenium\site\shared\CommonMethods.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\CentralLogoTests.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\LanguageLinksDataTests.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\SearchFormTests.cs" />
@@ -63,6 +62,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Automation\Automation.csproj">
+      <Project>{c9622229-98d3-4cc4-9b0f-fb7f3f249b0e}</Project>
+      <Name>Automation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibrary1\PageObjectModel.csproj">
       <Project>{210bb182-63f3-461a-b0ca-dd755188661e}</Project>
       <Name>PageObjectModel</Name>
