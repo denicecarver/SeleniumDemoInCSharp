@@ -120,6 +120,9 @@
   <data name="HomeIDSearchFormTextField" xml:space="preserve">
     <value>searchInput</value>
   </data>
+  <data name="HomePageUrl" xml:space="preserve">
+    <value>https://www.wikipedia.org/</value>
+  </data>
   <data name="HomeXPathCentralLogoChinese" xml:space="preserve">
     <value>//div[@lang='zh']/a</value>
   </data>

@@ -63,6 +63,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\PageObjectModel.csproj">
+      <Project>{210bb182-63f3-461a-b0ca-dd755188661e}</Project>
+      <Name>PageObjectModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\sqlitehelper\sqlitehelper.csproj">
       <Project>{b11f6309-00d4-4abf-8d39-eba0880848cb}</Project>
       <Name>sqlitehelper</Name>

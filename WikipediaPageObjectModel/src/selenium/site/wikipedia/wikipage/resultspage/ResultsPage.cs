@@ -1,14 +1,14 @@
 ﻿using OpenQA.Selenium;
 
-using selenium.site.wikipedia.wikipage;
+using selenium.page;
 
 using Resources = WikipediaPageObjectModel.Properties.Resources;
 
 namespace selenium.site.wikipedia.resultspage
 {
-    public class ResultsPage : WikiChildPage
+    public class ResultsPage : ChildPage
     {
-        public ResultsPage(WikiLoadPage wikiPage)
+        public ResultsPage(LoadPage wikiPage)
             : base(wikiPage)
         {
 
@@ -19,7 +19,7 @@ namespace selenium.site.wikipedia.resultspage
         {
             get
             {
-                return wikiPage.getElementByXPath(Resources.ResultsXPathSpecialError);
+                return loadPage.getElementByXPath(Resources.ResultsXPathSpecialError);
             }
         }
 
@@ -27,7 +27,7 @@ namespace selenium.site.wikipedia.resultspage
         {
             get
             {
-                return wikiPage.getElementByXPath(Resources.ResultsXPathSearchRedirectClass);
+                return loadPage.getElementByXPath(Resources.ResultsXPathSearchRedirectClass);
             }
         }
 
@@ -35,7 +35,7 @@ namespace selenium.site.wikipedia.resultspage
         {
             get
             {
-                return wikiPage.getElementByXPath(Resources.ResultsXPathSearchFailureHeader);
+                return loadPage.getElementByXPath(Resources.ResultsXPathSearchFailureHeader);
             }
         }
         #endregion

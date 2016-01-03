@@ -70,6 +70,15 @@ namespace WikipediaPageObjectModel.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://www.wikipedia.org/.
+        /// </summary>
+        internal static string HomePageUrl {
+            get {
+                return ResourceManager.GetString("HomePageUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to //div[@lang=&apos;zh&apos;]/a.
         /// </summary>
         internal static string HomeXPathCentralLogoChinese {

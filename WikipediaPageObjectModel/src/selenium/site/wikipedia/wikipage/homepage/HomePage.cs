@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 
+using selenium.page;
 using selenium.site.wikipedia.resultspage;
 using Resources = WikipediaPageObjectModel.Properties.Resources;
 
@@ -14,13 +15,20 @@ namespace selenium.site.wikipedia.wikipage.homepage
     /// WikiChildPage is any page that the user goes to after the WikiLoadPage so all child pages
     /// like the ResultsPage are members of the HomePage
     /// </summary>
-    public class HomePage : WikiLoadPage
+    public class HomePage : LoadPage
     {
         public HomePage(IWebDriver webDriver)
-            : base(webDriver)
+            : base(webDriver, Resources.HomePageUrl)
         {
         }
         private ResultsPage resultsPage = null;
+        /// <summary>
+        /// Method for test initialization
+        /// </summary>
+        public void goToWikiHomePage()
+        {
+            goToUrl();
+        }
         public ResultsPage ResultsPage
         {
             get

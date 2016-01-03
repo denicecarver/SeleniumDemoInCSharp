@@ -4,22 +4,22 @@ using OpenQA.Selenium;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
 
-namespace selenium.site.wikipedia.wikipage
-
+namespace selenium.page
 {
-    public class WikiLoadPage
+    public class LoadPage
     {
-        public WikiLoadPage(IWebDriver webDriver)
+        public LoadPage(IWebDriver webDriver, string homePageUrl)
         {
             this.webDriver = webDriver;
+            HomePageUrl = homePageUrl;
         }
-        private IWebDriver webDriver;
 
-        private const string WikiOrgUrl = "https://www.wikipedia.org/";
+        private IWebDriver webDriver;
+        private static string HomePageUrl = null;
 
         protected void goToUrl()
         {
-            goToUrl(WikiOrgUrl);
+            goToUrl(HomePageUrl);
         }
 
         protected void goToUrl(string url)
@@ -39,7 +39,7 @@ namespace selenium.site.wikipedia.wikipage
         {
             return webDriver.FindElement(mechanism);
         }
-        
+
         protected ReadOnlyCollection<IWebElement> getElementsById(By mechanism)
         {
             return webDriver.FindElements(mechanism);
@@ -63,14 +63,6 @@ namespace selenium.site.wikipedia.wikipage
         protected IWebElement getElementByID(string elementID)
         {
             return getElementById(By.Id(elementID));
-        }
-
-        /// <summary>
-        /// Method for test initialization
-        /// </summary>
-        public void goToWikiHomePage()
-        {
-            goToUrl();
         }
 
         /// <summary>
