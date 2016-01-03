@@ -52,9 +52,7 @@
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\LanguageLinksDataTests.cs" />
     <Compile Include="src\selenium\site\wikipedia\wikipage\homepage\SearchFormTests.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\selenium\site\brainhq\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -69,10 +67,6 @@
     <ProjectReference Include="..\ClassLibrary1\PageObjectModel.csproj">
       <Project>{210bb182-63f3-461a-b0ca-dd755188661e}</Project>
       <Name>PageObjectModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\sqlitehelper\sqlitehelper.csproj">
-      <Project>{b11f6309-00d4-4abf-8d39-eba0880848cb}</Project>
-      <Name>sqlitehelper</Name>
     </ProjectReference>
     <ProjectReference Include="..\WikipediaPageObjectModel\WikipediaPageObjectModel.csproj">
       <Project>{e3e9d254-76e3-4ed1-a3e1-f8ba13d3bd8d}</Project>

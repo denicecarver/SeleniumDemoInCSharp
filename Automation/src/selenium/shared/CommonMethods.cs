@@ -3,7 +3,6 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using system.data.sqlitehelper;
 using System.Diagnostics;
 using System.Data.SQLite;
 
@@ -59,76 +58,76 @@ namespace selenium.shared
         }
         #endregion
 
-        public static void CreateLanguageLinkDataTable()
-        {
-            using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
-            {
-                using (SQLiteCommand cmd = new SQLiteCommand())
-                {
-                    cmd.Connection = conn;
-                    conn.Open();
+        //public static void CreateLanguageLinkDataTable()
+        //{
+        //    using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
+        //    {
+        //        using (SQLiteCommand cmd = new SQLiteCommand())
+        //        {
+        //            cmd.Connection = conn;
+        //            conn.Open();
 
-                    SQLiteHelper sh = new system.data.sqlitehelper.SQLiteHelper(cmd);
-                    SQLiteTable tb = new SQLiteTable("LanguageLinkData");
+        //            SQLiteHelper sh = new system.data.sqlitehelper.SQLiteHelper(cmd);
+        //            SQLiteTable tb = new SQLiteTable("LanguageLinkData");
 
-                    tb.Columns.Add(new SQLiteColumn("id", true));
-                    tb.Columns.Add(new SQLiteColumn("pageid"));
-                    tb.Columns.Add(new SQLiteColumn("class"));
-                    tb.Columns.Add(new SQLiteColumn("lang"));
-                    tb.Columns.Add(new SQLiteColumn("dir"));
-                    tb.Columns.Add(new SQLiteColumn("dataconverthans"));
-                    tb.Columns.Add(new SQLiteColumn("title"));
-                    tb.Columns.Add(new SQLiteColumn("href"));
-                    tb.Columns.Add(new SQLiteColumn("text"));
+        //            tb.Columns.Add(new SQLiteColumn("id", true));
+        //            tb.Columns.Add(new SQLiteColumn("pageid"));
+        //            tb.Columns.Add(new SQLiteColumn("class"));
+        //            tb.Columns.Add(new SQLiteColumn("lang"));
+        //            tb.Columns.Add(new SQLiteColumn("dir"));
+        //            tb.Columns.Add(new SQLiteColumn("dataconverthans"));
+        //            tb.Columns.Add(new SQLiteColumn("title"));
+        //            tb.Columns.Add(new SQLiteColumn("href"));
+        //            tb.Columns.Add(new SQLiteColumn("text"));
 
-                    sh.CreateTable(tb);
+        //            sh.CreateTable(tb);
 
-                    conn.Close();
-                }
-            }
-        }
+        //            conn.Close();
+        //        }
+        //    }
+        //}
 
-        public static void LoadLanguageLinkData(ReadOnlyCollection<IWebElement> weListPrimary)
-        {
-            using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
-            {
-                using (SQLiteCommand cmd = new SQLiteCommand())
-                {
-                    cmd.Connection = conn;
-                    conn.Open();
+        //public static void LoadLanguageLinkData(ReadOnlyCollection<IWebElement> weListPrimary)
+        //{
+        //    using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
+        //    {
+        //        using (SQLiteCommand cmd = new SQLiteCommand())
+        //        {
+        //            cmd.Connection = conn;
+        //            conn.Open();
 
-                    SQLiteHelper sh = new SQLiteHelper(cmd);
-                    SQLiteTable tb = new SQLiteTable("LanguageLinkData");
+        //            SQLiteHelper sh = new SQLiteHelper(cmd);
+        //            SQLiteTable tb = new SQLiteTable("LanguageLinkData");
 
-                    //Debug.WriteLine(sh.ExecuteScalar("select Title from ResultLanguageLinks;"));
-                    Debug.WriteLine("============================================");
-                    foreach (IWebElement we in weListPrimary)
-                    {
-                        var dic = new Dictionary<string, object>();
-                        dic["class"] = we.GetAttribute("class");
-                        dic["lang"] = we.GetAttribute("lang");
-                        dic["dir"] = we.GetAttribute("dir");
-                        dic["dataconverthans"] = we.GetAttribute("data-convert-hans");
-                        dic["title"] = we.GetAttribute("title");
-                        dic["href"] = we.GetAttribute("href");
-                        dic["Text"] = we.Text;
-                        sh.Insert("LanguageLinkData", dic);
+        //            //Debug.WriteLine(sh.ExecuteScalar("select Title from ResultLanguageLinks;"));
+        //            Debug.WriteLine("============================================");
+        //            foreach (IWebElement we in weListPrimary)
+        //            {
+        //                var dic = new Dictionary<string, object>();
+        //                dic["class"] = we.GetAttribute("class");
+        //                dic["lang"] = we.GetAttribute("lang");
+        //                dic["dir"] = we.GetAttribute("dir");
+        //                dic["dataconverthans"] = we.GetAttribute("data-convert-hans");
+        //                dic["title"] = we.GetAttribute("title");
+        //                dic["href"] = we.GetAttribute("href");
+        //                dic["Text"] = we.Text;
+        //                sh.Insert("LanguageLinkData", dic);
 
-                        Debug.WriteLine("id=" + we.GetAttribute("id"));
-                        Debug.WriteLine("class=" + we.GetAttribute("class"));
-                        Debug.WriteLine("lang=" + we.GetAttribute("lang"));
-                        Debug.WriteLine("dir=" + we.GetAttribute("dir"));
-                        Debug.WriteLine("dataconverthans=" + we.GetAttribute("data-convert-hans"));
-                        Debug.WriteLine("title=" + we.GetAttribute("title"));
-                        Debug.WriteLine("href=" + we.GetAttribute("href"));
-                        Debug.WriteLine("Text=" + we.Text);
-                        Debug.WriteLine("============================================");
-                    }
+        //                Debug.WriteLine("id=" + we.GetAttribute("id"));
+        //                Debug.WriteLine("class=" + we.GetAttribute("class"));
+        //                Debug.WriteLine("lang=" + we.GetAttribute("lang"));
+        //                Debug.WriteLine("dir=" + we.GetAttribute("dir"));
+        //                Debug.WriteLine("dataconverthans=" + we.GetAttribute("data-convert-hans"));
+        //                Debug.WriteLine("title=" + we.GetAttribute("title"));
+        //                Debug.WriteLine("href=" + we.GetAttribute("href"));
+        //                Debug.WriteLine("Text=" + we.Text);
+        //                Debug.WriteLine("============================================");
+        //            }
 
-                    conn.Close();
-                }
-            }
-        }
+        //            conn.Close();
+        //        }
+        //    }
+        //}
 
     }
 }
