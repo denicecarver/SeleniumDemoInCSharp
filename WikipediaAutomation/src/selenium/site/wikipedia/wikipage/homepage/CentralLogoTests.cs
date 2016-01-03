@@ -12,7 +12,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         #region private members
         //global for the test run
         private static TestContext context;
-        private static HomePage homePage = new HomePage(CommonMethods.webDriver);
+        private static HomePage homePage = new HomePage(CommonMethods.WebDriver);
         #endregion
 
         #region Initialisation and cleanup

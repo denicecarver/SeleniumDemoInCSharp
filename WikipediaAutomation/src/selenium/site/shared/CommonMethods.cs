@@ -12,8 +12,8 @@ namespace selenium.site.shared
     public static class CommonMethods
     {
 
-        public static IWebDriver webDriver = new FirefoxDriver();
-        private static string connectionString = "data source=C:\\Source\\SeleniumDemoInCSharp\\WikipediaAutomation\\sitedata\\wikipedia\\wikidata.db";
+        public static IWebDriver WebDriver = new FirefoxDriver();
+        public static string ConnectionString = "data source=C:\\Source\\SeleniumDemoInCSharp\\WikipediaAutomation\\sitedata\\wikipedia\\wikidata.db";
 
         #region Error Handling
         public static string FormatAssertMessage(string expectedResult, string actualResult)
@@ -61,7 +61,7 @@ namespace selenium.site.shared
 
         public static void CreateLanguageLinkDataTable()
         {
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
             {
                 using (SQLiteCommand cmd = new SQLiteCommand())
                 {
@@ -90,7 +90,7 @@ namespace selenium.site.shared
 
         public static void LoadLanguageLinkData(ReadOnlyCollection<IWebElement> weListPrimary)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
             {
                 using (SQLiteCommand cmd = new SQLiteCommand())
                 {

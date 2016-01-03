@@ -22,7 +22,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         #region private members
         //global for the test run
         private static TestContext testContextInstance;
-        private static HomePage homePage = new HomePage(CommonMethods.webDriver);
+        private static HomePage homePage = new HomePage(CommonMethods.WebDriver);
         #endregion
 
         /// <summary>
@@ -84,21 +84,29 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         //
         #endregion
 
-        [TestMethod]
-        public void createLanguageLinksTable()
-        {
-            CommonMethods.CreateLanguageLinkDataTable();
-        }
+        //[TestMethod]
+        //public void createLanguageLinksTable()
+        //{
+        //    CommonMethods.CreateLanguageLinkDataTable();
+        //}
 
-        [TestMethod]
-        public void loadLanguageLinks()
-        {
-            ReadOnlyCollection<IWebElement> webElementListPrimary = homePage.getElementsByXPath(".//*[@id='www-wikipedia-org']/div/ul/li/a");
-            CommonMethods.LoadLanguageLinkData(webElementListPrimary);
-            ReadOnlyCollection<IWebElement> webElementListSecondary = homePage.getElementsByXPath(".//*[@id='www-wikipedia-org']/div/ul/li/a/span");
-            CommonMethods.LoadLanguageLinkData(webElementListSecondary);
-            ReadOnlyCollection<IWebElement> webElementListTertiary = homePage.getElementsByXPath(".//*[@id='www-wikipedia-org']/div/ul/li/a/bdi");
-            CommonMethods.LoadLanguageLinkData(webElementListTertiary);
-        }
+        //[TestMethod]
+        //public void loadLanguageLinks()
+        //{
+        //    ReadOnlyCollection<IWebElement> webElementListPrimary = homePage.getElementsByXPath(".//*[@id='www-wikipedia-org']/div/ul/li/a");
+        //    CommonMethods.LoadLanguageLinkData(webElementListPrimary);
+        //    ReadOnlyCollection<IWebElement> webElementListSecondary = homePage.getElementsByXPath(".//*[@id='www-wikipedia-org']/div/ul/li/a/span");
+        //    CommonMethods.LoadLanguageLinkData(webElementListSecondary);
+        //    ReadOnlyCollection<IWebElement> webElementListTertiary = homePage.getElementsByXPath(".//*[@id='www-wikipedia-org']/div/ul/li/a/bdi");
+        //    CommonMethods.LoadLanguageLinkData(webElementListTertiary);
+        //}
+
+        //[TestMethod]
+        //[DataSource("Provider=OleSQLite.SQLiteSource; Data Source=wikidata.db;")]
+        //public void goToURLS() {
+        //    var temp = TestContext.DataRow[0];
+        //    temp.ToString();
+        //}
+        
     }
 }
