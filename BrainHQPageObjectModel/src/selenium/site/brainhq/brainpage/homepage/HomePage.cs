@@ -45,7 +45,7 @@ namespace selenium.site.brainhq.brainpage.homepage
             }
         }
 
-        public IWebElement TextLoginEmailAddress
+        public IWebElement TextFieldLoginEmailAddress
         {
             get
             {
@@ -53,7 +53,7 @@ namespace selenium.site.brainhq.brainpage.homepage
             }
         }
 
-        public IWebElement TextLoginPassword
+        public IWebElement TextFieldLoginPassword
         {
             get
             {
