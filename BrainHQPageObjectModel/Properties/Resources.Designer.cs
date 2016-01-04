@@ -106,11 +106,101 @@ namespace BrainHQPageObjectModel.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-smry-time&apos;].
+        /// </summary>
+        internal static string LandingXPathTabAQPerformanceSummaryPage {
+            get {
+                return ResourceManager.GetString("LandingXPathTabAQPerformanceSummaryPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-smry-levs&apos;].
+        /// </summary>
+        internal static string LandingXPathTabLevelsPerformanceSummaryPage {
+            get {
+                return ResourceManager.GetString("LandingXPathTabLevelsPerformanceSummaryPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-smry-perc&apos;].
+        /// </summary>
+        internal static string LandingXPathTabPercentilePerformanceSummaryPage {
+            get {
+                return ResourceManager.GetString("LandingXPathTabPercentilePerformanceSummaryPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .//*[@id=&apos;nav-prog&apos;].
         /// </summary>
         internal static string LandingXPathTabProgressPage {
             get {
                 return ResourceManager.GetString("LandingXPathTabProgressPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-smry-stars&apos;].
+        /// </summary>
+        internal static string LandingXPathTabStarsPerformanceSummaryPage {
+            get {
+                return ResourceManager.GetString("LandingXPathTabStarsPerformanceSummaryPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;baq-delta&apos;].
+        /// </summary>
+        internal static string ProgressXPathBrainAQDeltaValues {
+            get {
+                return ResourceManager.GetString("ProgressXPathBrainAQDeltaValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;baq-val&apos;]/b.
+        /// </summary>
+        internal static string ProgressXPathBrainAQValue {
+            get {
+                return ResourceManager.GetString("ProgressXPathBrainAQValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;age-center-num&apos;]/div[@class=&apos;graph-label huge-number&apos;]/br.
+        /// </summary>
+        internal static string ProgressXPathStaticTextByAgePercentile {
+            get {
+                return ResourceManager.GetString("ProgressXPathStaticTextByAgePercentile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-det-table&apos;]/tr/td[@class=&apos;td-imp&apos;].
+        /// </summary>
+        internal static string ProgressXPathStaticTextImprovementValues {
+            get {
+                return ResourceManager.GetString("ProgressXPathStaticTextImprovementValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-det-table&apos;]/tr/td[@class=&apos;td-meas&apos;].
+        /// </summary>
+        internal static string ProgressXPathStaticTextValues {
+            get {
+                return ResourceManager.GetString("ProgressXPathStaticTextValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-smry-perc&apos;]/div[@class=&apos;big-val&apos;].
+        /// </summary>
+        internal static string ProgressXPathTabTitleOverallPercentile {
+            get {
+                return ResourceManager.GetString("ProgressXPathTabTitleOverallPercentile", resourceCulture);
             }
         }
     }

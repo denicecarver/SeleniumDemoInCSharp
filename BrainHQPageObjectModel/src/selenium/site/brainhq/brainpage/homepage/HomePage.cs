@@ -29,19 +29,12 @@ namespace selenium.site.brainhq.brainpage.homepage
             goToUrl();
         }
 
+        #region link to login dialog and dialog elements
         public IWebElement LinkLoginDialog
         {
             get
             {
                 return getElementByXPath(Resources.HomeXPathLinkLoginDialog);
-            }
-        }
-
-        public IWebElement TabProgressPage
-        {
-            get
-            {
-                return getElementByXPath(Resources.LandingXPathTabProgressPage);
             }
         }
 
@@ -66,6 +59,52 @@ namespace selenium.site.brainhq.brainpage.homepage
             get
             {
                 return getElementByXPath(Resources.HomeXPathButtonLogin);
+            }
+        }
+        #endregion
+
+        // Tab to go to Progress main page
+        public IWebElement TabProgressPage
+        {
+            get
+            {
+                return getElementByXPath(Resources.LandingXPathTabProgressPage);
+            }
+        }
+
+        // Tab to go to BrainAQ Progress page
+        public IWebElement TabAQPerformanceSummaryPage
+        {
+            get
+            {
+                return getElementByXPath(Resources.LandingXPathTabAQPerformanceSummaryPage);
+            }
+        }
+
+        // Tab to go to Stars Progress page
+        public IWebElement TabStarsPerformanceSummaryPage
+        {
+            get
+            {
+                return getElementByXPath(Resources.LandingXPathTabStarsPerformanceSummaryPage);
+            }
+        }
+
+        // Tab to go to Levels Progress page
+        public IWebElement TabLevelsPerformanceSummaryPage
+        {
+            get
+            {
+                return getElementByXPath(Resources.LandingXPathTabLevelsPerformanceSummaryPage);
+            }
+        }
+
+        // Tab to go to Percentile Progress page
+        public IWebElement TabPercentilePerformanceSummaryPage
+        {
+            get
+            {
+                return getElementByXPath(Resources.LandingXPathTabPercentilePerformanceSummaryPage);
             }
         }
 

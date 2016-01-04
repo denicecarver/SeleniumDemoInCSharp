@@ -132,7 +132,40 @@
   <data name="HomeXPathTextLoginPassword" xml:space="preserve">
     <value>.//*[@id='pw-in']</value>
   </data>
+  <data name="LandingXPathTabAQPerformanceSummaryPage" xml:space="preserve">
+    <value>.//*[@id='prf-smry-time']</value>
+  </data>
+  <data name="LandingXPathTabLevelsPerformanceSummaryPage" xml:space="preserve">
+    <value>.//*[@id='prf-smry-levs']</value>
+  </data>
+  <data name="LandingXPathTabPercentilePerformanceSummaryPage" xml:space="preserve">
+    <value>.//*[@id='prf-smry-perc']</value>
+  </data>
   <data name="LandingXPathTabProgressPage" xml:space="preserve">
     <value>.//*[@id='nav-prog']</value>
+  </data>
+  <data name="LandingXPathTabStarsPerformanceSummaryPage" xml:space="preserve">
+    <value>.//*[@id='prf-smry-stars']</value>
+  </data>
+  <data name="ProgressXPathBrainAQDeltaValues" xml:space="preserve">
+    <value>.//*[@id='baq-delta']</value>
+    <comment>Format is ### (#.##)</comment>
+  </data>
+  <data name="ProgressXPathBrainAQValue" xml:space="preserve">
+    <value>.//*[@id='baq-val']/b</value>
+  </data>
+  <data name="ProgressXPathStaticTextByAgePercentile" xml:space="preserve">
+    <value>.//*[@id='age-center-num']/div[@class='graph-label huge-number']/br</value>
+  </data>
+  <data name="ProgressXPathStaticTextImprovementValues" xml:space="preserve">
+    <value>.//*[@id='prf-det-table']/tr/td[@class='td-imp']</value>
+    <comment>Gets all improvement values</comment>
+  </data>
+  <data name="ProgressXPathStaticTextValues" xml:space="preserve">
+    <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
+    <comment>Gets all values</comment>
+  </data>
+  <data name="ProgressXPathTabTitleOverallPercentile" xml:space="preserve">
+    <value>.//*[@id='prf-smry-perc']/div[@class='big-val']</value>
   </data>
 </root>
