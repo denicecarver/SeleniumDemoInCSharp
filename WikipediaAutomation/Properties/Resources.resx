@@ -154,7 +154,7 @@
     <value>https://zh.wikipedia.org</value>
   </data>
   <data name="HomePageURLEnglish" xml:space="preserve">
-    <value>https://en.wikipedia.org</value>
+    <value>https://en.wikipedia.org/wiki/Main_Page</value>
   </data>
   <data name="HomePageURLFrench" xml:space="preserve">
     <value>https://fr.wikipedia.org</value>

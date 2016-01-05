@@ -169,7 +169,7 @@ namespace WikipediaAutomation.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://en.wikipedia.org.
+        ///   Looks up a localized string similar to https://en.wikipedia.org/wiki/Main_Page.
         /// </summary>
         internal static string HomePageURLEnglish {
             get {
