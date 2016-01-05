@@ -160,6 +160,96 @@ namespace WikipediaAutomation.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5.
+        /// </summary>
+        internal static string HomePageLinkToChineseLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToChineseLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://en.wikipedia.org/wiki/Main_Page.
+        /// </summary>
+        internal static string HomePageLinkToEnglishLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToEnglishLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal.
+        /// </summary>
+        internal static string HomePageLinkToFrenchLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToFrenchLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://de.wikipedia.org/wiki/Wikipedia:Hauptseite.
+        /// </summary>
+        internal static string HomePageLinkToGermanLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToGermanLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://it.wikipedia.org/wiki/Pagina_principale.
+        /// </summary>
+        internal static string HomePageLinkToItalianLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToItalianLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8.
+        /// </summary>
+        internal static string HomePageLinkToJapaneseLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToJapaneseLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna.
+        /// </summary>
+        internal static string HomePageLinkToPolishLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToPolishLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal.
+        /// </summary>
+        internal static string HomePageLinkToPortugueseLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToPortugueseLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.
+        /// </summary>
+        internal static string HomePageLinkToRussianLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToRussianLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://es.wikipedia.org/wiki/Wikipedia:Portada.
+        /// </summary>
+        internal static string HomePageLinkToSpanishLandingPage {
+            get {
+                return ResourceManager.GetString("HomePageLinkToSpanishLandingPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://zh.wikipedia.org.
         /// </summary>
         internal static string HomePageURLChinese {
@@ -169,7 +259,7 @@ namespace WikipediaAutomation.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://en.wikipedia.org/wiki/Main_Page.
+        ///   Looks up a localized string similar to https://en.wikipedia.org.
         /// </summary>
         internal static string HomePageURLEnglish {
             get {

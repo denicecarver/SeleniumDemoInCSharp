@@ -150,11 +150,41 @@
   <data name="HomeLanguageSpanish" xml:space="preserve">
     <value>Español</value>
   </data>
+  <data name="HomePageLinkToChineseLandingPage" xml:space="preserve">
+    <value>https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5</value>
+  </data>
+  <data name="HomePageLinkToEnglishLandingPage" xml:space="preserve">
+    <value>https://en.wikipedia.org/wiki/Main_Page</value>
+  </data>
+  <data name="HomePageLinkToFrenchLandingPage" xml:space="preserve">
+    <value>https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal</value>
+  </data>
+  <data name="HomePageLinkToGermanLandingPage" xml:space="preserve">
+    <value>https://de.wikipedia.org/wiki/Wikipedia:Hauptseite</value>
+  </data>
+  <data name="HomePageLinkToItalianLandingPage" xml:space="preserve">
+    <value>https://it.wikipedia.org/wiki/Pagina_principale</value>
+  </data>
+  <data name="HomePageLinkToJapaneseLandingPage" xml:space="preserve">
+    <value>https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8</value>
+  </data>
+  <data name="HomePageLinkToPolishLandingPage" xml:space="preserve">
+    <value>https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna</value>
+  </data>
+  <data name="HomePageLinkToPortugueseLandingPage" xml:space="preserve">
+    <value>https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal</value>
+  </data>
+  <data name="HomePageLinkToRussianLandingPage" xml:space="preserve">
+    <value>https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0</value>
+  </data>
+  <data name="HomePageLinkToSpanishLandingPage" xml:space="preserve">
+    <value>https://es.wikipedia.org/wiki/Wikipedia:Portada</value>
+  </data>
   <data name="HomePageURLChinese" xml:space="preserve">
     <value>https://zh.wikipedia.org</value>
   </data>
   <data name="HomePageURLEnglish" xml:space="preserve">
-    <value>https://en.wikipedia.org/wiki/Main_Page</value>
+    <value>https://en.wikipedia.org</value>
   </data>
   <data name="HomePageURLFrench" xml:space="preserve">
     <value>https://fr.wikipedia.org</value>
