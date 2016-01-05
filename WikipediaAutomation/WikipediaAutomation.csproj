@@ -31,7 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Automation, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Automation\bin\Debug\Automation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PageObjectModel">
+      <HintPath>..\PageObjectModel\bin\Debug\PageObjectModel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite">
@@ -39,6 +46,9 @@
     </Reference>
     <Reference Include="WebDriver">
       <HintPath>..\..\..\Program Files\CSharp\Selenium\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WikipediaPageObjectModel">
+      <HintPath>..\WikipediaPageObjectModel\bin\Debug\WikipediaPageObjectModel.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,20 +68,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Automation\Automation.csproj">
-      <Project>{c9622229-98d3-4cc4-9b0f-fb7f3f249b0e}</Project>
-      <Name>Automation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary1\PageObjectModel.csproj">
-      <Project>{210bb182-63f3-461a-b0ca-dd755188661e}</Project>
-      <Name>PageObjectModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WikipediaPageObjectModel\WikipediaPageObjectModel.csproj">
-      <Project>{e3e9d254-76e3-4ed1-a3e1-f8ba13d3bd8d}</Project>
-      <Name>WikipediaPageObjectModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

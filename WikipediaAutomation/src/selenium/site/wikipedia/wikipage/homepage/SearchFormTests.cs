@@ -2,7 +2,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using selenium.shared;
 using selenium.site.wikipedia.resultspage;
-
 using TestDataResources = WikipediaAutomation.Properties.Resources;
 
 namespace selenium.site.wikipedia.wikipage.homepage.Tests

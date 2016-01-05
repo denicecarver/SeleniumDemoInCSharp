@@ -58,7 +58,7 @@ namespace selenium.shared
         }
         #endregion
 
-        private const string publicKey = "dkjashfehlknxuexnjjnhjka";
+        private const string publicKey = "";
 
         public static string EncryptString(string encryptThis)
         {

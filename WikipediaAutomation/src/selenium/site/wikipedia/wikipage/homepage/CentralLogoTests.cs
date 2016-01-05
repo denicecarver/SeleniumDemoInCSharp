@@ -136,18 +136,18 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         [TestMethod]
         public void goesToEnglishWikiFromCentralLogoLink()
         {
-            // Click on the English link
+            // Click on the English link next to the Central Logo
             homePage.LinkCentralLogoEnglish.Click();
 
             // Get the actual URL after clicking on the English link
             string actualResult = homePage.getCurrentUrl();
 
             // Get the expected URL for the English Wiki Home page
+            // https://en.wikipedia.org/wiki/Main_Page
             string expectedResult = HomePageTestResources.HomePageURLEnglish;
 
             // Compare actual and expected URLs
-            // (uses contains instead of equals in test because landing page may not be homepage for a language)
-            Assert.IsTrue(actualResult.Contains(expectedResult),
+            Assert.IsTrue(actualResult.Equals(expectedResult),
                     CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
