@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
-
 using selenium.page;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Resources = BrainHQPageObjectModel.Properties.Resources;
 
 namespace selenium.site.brainhq.brainpage.homepage
@@ -106,6 +107,82 @@ namespace selenium.site.brainhq.brainpage.homepage
             {
                 return getElementByXPath(Resources.LandingXPathTabPercentilePerformanceSummaryPage);
             }
+        }
+
+        private ReadOnlyCollection<IWebElement> PercentileValues
+        {
+            get
+            {
+                return getElementsByXPath(Resources.ProgressXPathStaticTextPercentileValues);
+            }
+        }
+
+        private ReadOnlyCollection<IWebElement> ImprovementValues
+        {
+            get
+            {
+                return getElementsByXPath(Resources.ProgressXPathStaticTextImprovementValues);
+            }
+        }
+
+        private ReadOnlyCollection<IWebElement> StarValues
+        {
+            get
+            {
+                return getElementsByXPath(Resources.ProgressXPathStaticTextStarValues);
+            }
+        }
+
+        private ReadOnlyCollection<IWebElement> LevelValues
+        {
+            get
+            {
+                return getElementsByXPath(Resources.ProgressXPathStaticTextLevelValues);
+            }
+        }
+
+        public int[] getPercentiles()
+        {
+            int[] percInts = new int[PercentileValues.Count];
+            int counter = 0;
+            foreach (IWebElement we in PercentileValues)
+            {
+                percInts[counter++] = int.Parse(we.Text.Remove(2));
+            }
+            return percInts;
+        }
+
+        public int[] getStarCounts()
+        {
+            int[] starInts = new int[StarValues.Count];
+            int counter = 0;
+            foreach (IWebElement we in StarValues)
+            {
+                starInts[counter++] = int.Parse(we.Text);
+            }
+            return starInts;
+        }
+
+        public int[] getLevelCounts()
+        {
+            int[] LevelInts = new int[LevelValues.Count];
+            int counter = 0;
+            foreach (IWebElement we in LevelValues)
+            {
+                LevelInts[counter++] = int.Parse(we.Text);
+            }
+            return LevelInts;
+        }
+
+        public decimal[] getImprovements()
+        {
+            decimal[] impDecs = new decimal[ImprovementValues.Count];
+            int counter = 0;
+            foreach (IWebElement we in ImprovementValues)
+            {
+                impDecs[counter++] = decimal.Parse(we.Text);
+            }
+            return impDecs;
         }
 
     }

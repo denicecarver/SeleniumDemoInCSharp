@@ -189,9 +189,27 @@ namespace BrainHQPageObjectModel.Properties {
         /// <summary>
         ///   Looks up a localized string similar to .//*[@id=&apos;prf-det-table&apos;]/tr/td[@class=&apos;td-meas&apos;].
         /// </summary>
-        internal static string ProgressXPathStaticTextValues {
+        internal static string ProgressXPathStaticTextLevelValues {
             get {
-                return ResourceManager.GetString("ProgressXPathStaticTextValues", resourceCulture);
+                return ResourceManager.GetString("ProgressXPathStaticTextLevelValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-det-table&apos;]/tr/td[@class=&apos;td-meas&apos;].
+        /// </summary>
+        internal static string ProgressXPathStaticTextPercentileValues {
+            get {
+                return ResourceManager.GetString("ProgressXPathStaticTextPercentileValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;prf-det-table&apos;]/tr/td[@class=&apos;td-meas&apos;].
+        /// </summary>
+        internal static string ProgressXPathStaticTextStarValues {
+            get {
+                return ResourceManager.GetString("ProgressXPathStaticTextStarValues", resourceCulture);
             }
         }
         

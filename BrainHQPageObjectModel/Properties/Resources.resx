@@ -161,9 +161,15 @@
     <value>.//*[@id='prf-det-table']/tr/td[@class='td-imp']</value>
     <comment>Gets all improvement values</comment>
   </data>
-  <data name="ProgressXPathStaticTextValues" xml:space="preserve">
+  <data name="ProgressXPathStaticTextLevelValues" xml:space="preserve">
+    <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
+  </data>
+  <data name="ProgressXPathStaticTextPercentileValues" xml:space="preserve">
     <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
     <comment>Gets all values</comment>
+  </data>
+  <data name="ProgressXPathStaticTextStarValues" xml:space="preserve">
+    <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
   </data>
   <data name="ProgressXPathTabTitleOverallPercentile" xml:space="preserve">
     <value>.//*[@id='prf-smry-perc']/div[@class='big-val']</value>
