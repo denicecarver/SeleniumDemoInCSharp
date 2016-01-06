@@ -116,7 +116,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
         #region Central Logo Links Testing
         [TestMethod]
-        public void goesToChineseWikiFromCentralLogoLink()
+        public void goesToChineseLandingPageFromCentralLogoLink()
         {
             // Click on the Chinese link next to the Central Logo
             // that leads to the Chinese landing page
@@ -135,7 +135,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToEnglishWikiFromCentralLogoLink()
+        public void goesToEnglishLandingPageFromCentralLogoLink()
         {
             // Click on the English link next to the Central Logo
             // that leads to the English landing page
@@ -154,7 +154,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToFrenchWikiFromCentralLogo()
+        public void goesToFrenchLandingPageFromCentralLogo()
         {
             // Click on the French link next to the Central Logo
             // that leads to the French landing page
@@ -173,7 +173,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToGermanWikiFromCentralLogo()
+        public void goesToGermanLandingPageFromCentralLogo()
         {
             // Click on the German link next to the Central Logo
             // that leads to the English landing page
@@ -192,7 +192,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToItalianWikiFromCentralLogo()
+        public void goesToItalianLandingPageFromCentralLogo()
         {
             // Click on the Italian link next to the Central Logo
             // that leads to the Italian landing page
@@ -211,7 +211,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToJapaneseWikiFromCentralLogo()
+        public void goesToJapaneseLandingPageFromCentralLogo()
         {
             // Click on the Japanese link next to the Central Logo
             // that leads to the Japanese landing page
@@ -230,7 +230,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToPolishWikiFromCentralLogo()
+        public void goesToPolishLandingPageFromCentralLogo()
         {
             // Click on the Polish link next to the Central Logo
             // that leads to the Polish landing page
@@ -249,7 +249,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToPortugueseWikiFromCentralLogoLink()
+        public void goesToPortugueseLandingPageFromCentralLogoLink()
         {
             // Click on the Portuguese link next to the Central Logo
             // that leads to the Portuguese landing page
@@ -268,7 +268,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToRussianWikiFromCentralLogoLink()
+        public void goesToRussianLandingPageFromCentralLogoLink()
         {
             // Click on the Russian link next to the Central Logo
             // that leads to the Russian landing page
@@ -287,7 +287,7 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
         }
 
         [TestMethod]
-        public void goesToSpanishWikiFromCentralLogoLink()
+        public void goesToSpanishLandingPageFromCentralLogoLink()
         {
             // Click on the Spanish link next to the Central Logo
             // that leads to the Spanish landing page
