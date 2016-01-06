@@ -134,6 +134,8 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
                     CommonMethods.FormatAssertMessage(expectedResult, actualResult));
         }
 
+        // This test goes to the English landing page from the central logo link and
+        // verifies the URL is correct
         [TestMethod]
         public void goesToEnglishLandingPageFromCentralLogoLink()
         {
@@ -146,7 +148,8 @@ namespace selenium.site.wikipedia.wikipage.homepage.Tests
 
             // Get the expected URL for the English landing page
             // https://en.wikipedia.org/wiki/Main_Page
-            string expectedResult = HomePageTestResources.HomePageLinkToEnglishLandingPage;
+            string expectedResult =
+                HomePageTestResources.HomePageLinkToEnglishLandingPage;
 
             // Compare actual and expected URLs, noting details if the test fails
             Assert.IsTrue(actualResult.Equals(expectedResult),
