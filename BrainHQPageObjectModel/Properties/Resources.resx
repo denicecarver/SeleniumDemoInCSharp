@@ -155,7 +155,7 @@
     <value>.//*[@id='baq-val']/b</value>
   </data>
   <data name="ProgressXPathStaticTextByAgePercentile" xml:space="preserve">
-    <value>.//*[@id='age-center-num']/div[@class='graph-label huge-number']/br</value>
+    <value>.//*[@id='age-center-num']/div[@class='graph-label huge-number']</value>
   </data>
   <data name="ProgressXPathStaticTextImprovementValues" xml:space="preserve">
     <value>.//*[@id='prf-det-table']/tr/td[@class='td-imp']</value>
@@ -163,13 +163,15 @@
   </data>
   <data name="ProgressXPathStaticTextLevelValues" xml:space="preserve">
     <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
+    <comment>Get all level values</comment>
   </data>
   <data name="ProgressXPathStaticTextPercentileValues" xml:space="preserve">
     <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
-    <comment>Gets all values</comment>
+    <comment>Gets all percentile values</comment>
   </data>
   <data name="ProgressXPathStaticTextStarValues" xml:space="preserve">
     <value>.//*[@id='prf-det-table']/tr/td[@class='td-meas']</value>
+    <comment>Gets all star values</comment>
   </data>
   <data name="ProgressXPathTabTitleOverallPercentile" xml:space="preserve">
     <value>.//*[@id='prf-smry-perc']/div[@class='big-val']</value>

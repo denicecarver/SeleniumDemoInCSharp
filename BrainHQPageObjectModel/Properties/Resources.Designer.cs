@@ -169,7 +169,7 @@ namespace BrainHQPageObjectModel.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .//*[@id=&apos;age-center-num&apos;]/div[@class=&apos;graph-label huge-number&apos;]/br.
+        ///   Looks up a localized string similar to .//*[@id=&apos;age-center-num&apos;]/div[@class=&apos;graph-label huge-number&apos;].
         /// </summary>
         internal static string ProgressXPathStaticTextByAgePercentile {
             get {

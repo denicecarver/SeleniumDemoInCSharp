@@ -109,6 +109,40 @@ namespace selenium.site.brainhq.brainpage.homepage
             }
         }
 
+        // BrainAQ static text field
+        public IWebElement TextBrainAQScore
+        {
+            get
+            {
+                return getElementByXPath(Resources.ProgressXPathBrainAQValue);
+            }
+        }
+
+        // BrainAQ static text field
+        public IWebElement TextBrainAQDeltaScores
+        {
+            get
+            {
+                return getElementByXPath(Resources.ProgressXPathBrainAQDeltaValues);
+            }
+        }
+
+        public IWebElement TextOverallPercentile
+        {
+            get
+            {
+                return getElementByXPath(Resources.LandingXPathTabPercentilePerformanceSummaryPage);
+            }
+        }
+
+        public IWebElement TextByAgePercentile
+        {
+            get
+            {
+                return getElementByXPath(Resources.ProgressXPathStaticTextByAgePercentile);
+            }
+        }
+
         private ReadOnlyCollection<IWebElement> PercentileValues
         {
             get
